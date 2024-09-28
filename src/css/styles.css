@@ -6,13 +6,43 @@
 */
 /* Common styles */
 @import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+.form-search{
+  display: flex;
+justify-content: flex-start;
+flex-direction: row;
+gap: 8px;
+border-radius: 4px;
+width: 272px;
+height: 40px;
+margin: auto;
+}
+
+.btn{
+  display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: row;
+gap: 10px;
+border-radius: 8px;
+padding: 8px 16px;
+width: 91px;
+height: 40px;
+background: #4e75ff;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+color: #fff;
+}
+
+.input-form{
+  font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+color: #808080;
+padding-top: 8px;
+padding-bottom: 8px;
+padding-left: 16px;
+}

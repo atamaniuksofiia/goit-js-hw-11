@@ -5,13 +5,26 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/izitoast@1.4.0/dist/css/iziToast.min.css"
+  /> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.0/simple-lightbox.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
 
+    <form class="form-search">
+      <input type="text" name="query" class="input-form js-input" placeholder="Search images..." required />
+      <button type="submit" class="btn js-btn">Search</button>
+    </form>
+    <div class="loader" style="display: none">Loading images, please wait...</div>
+    <ul class="gallery"></ul>
 
-    
+    <script src="https://cdn.jsdelivr.net/npm/izitoast@1.4.0/dist/js/iziToast.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.0/simple-lightbox.min.js"></script>
     <script type="module" src="./js/pixabey-api.js"></script>
     <script type="module" src="./js/render-functions.js"></script>
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
